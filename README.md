@@ -31,3 +31,46 @@ Exclaimer: In some cases, it should ask for permission of execution of bash scri
 
 
 Few commands to learn: ls, chmod, nano, echo, cat, chsh(used to change between shells, eg: zsh, ksh, bash) 
+
+
+# Day2: Variables and Math function
+Variables: used to store the data. We can store it in the bash script so that we can use it later, if we try to initialize the variable directly in the terminal, it is vanishes after teh restart.
+
+How it works?
+It is similar to python to initialize the variable.
+Ex: myname="Engineer10X"
+
+Here myname variable stores the string value "Engineer10X".
+
+To access it, use "$variable_name", in this case; $myname
+Question is why to use $ sign in the front?
+Answer is pretty simple, <$> dollar sign is reference of the variable. Whenever it used in the front, it checks for the value stored the variable and returns it.
+
+Note: Double and single quotes also matters. lets understand with an example.
+Ex: myname="Engineer10X"
+echo "Hello, $myname"  -> this will print the value stored in the myname variable. output: Hello, Engineer10X
+echo 'Hello, $myname'  -> this will consider it as a string and output: Hello, $myname
+
+Though, use quotes wisely.
+
+Why use variables?
+It is used to store and so that called when in use otherwise it should be defined in every part of the script where needed. It makes the code difficult to make changes.
+
+You can also run commands using variables, like:
+files= $(ls)
+echo $files  -> output: call the variable and run the command stored into it, in the current working directory.
+
+Also, it is noticed that when dollar sign($) with all upper case alphabets are used, theya re referencing to the environment variables, which are defined already.
+To check environment variables: run <env> command
+Ex: echo $HOME, echo $USER
+
+
+# Math Function
++, -, /
+use <expr> command to calculate any expression
+Ex: expr 10+23, expr 10-23, expr 10/23
+
+But notice that you can't run for multiplication directly, * asterick; is considered as awild card in bash and is used for special purposes.
+To perform multiplication, try this way:
+expr 10 \* 23  -> using backslash before the asterick specifies that it is used to perform the mathematic multiplication.
+
