@@ -26,8 +26,8 @@ echo "now perform some math function"
 echo "Addition"
 expr 30 + 20
 echo "Subtraction"
-expr 30-20
+expr 30 - 20
 echo "Division"
-expr 30/10
+expr 30 / 10
 echo "Multiplication"
-expr 30\*10
+expr 30 \* 10
