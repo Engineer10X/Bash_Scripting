@@ -68,7 +68,9 @@ Ex: echo $HOME, echo $USER
 # Math Function
 +, -, /
 use <expr> command to calculate any expression
-Ex: expr 10+23, expr 10-23, expr 10/23
+Ex: expr 10 + 23, expr 10 - 23, expr 10/23
+
+Note: Do add space before and after the math operator otherwise it will consider the expression as a string and return the whole expr instead of the final answer.
 
 But notice that you can't run for multiplication directly, * asterick; is considered as awild card in bash and is used for special purposes.
 To perform multiplication, try this way:
