@@ -76,3 +76,29 @@ But notice that you can't run for multiplication directly, * asterick; is consid
 To perform multiplication, try this way:
 expr 10 \* 23  -> using backslash before the asterick specifies that it is used to perform the mathematic multiplication.
 
+# Day3
+topics: if/else statement,
+Rule 1: syntax:
+if [condition]
+then
+///////
+
+else
+/////
+fi
+
+<fi> is used to close the if scope.
+-eq -> =
+! -> not equal to 
+-gt -> greater then
+
+Note: Spacing matters alot
+How it works: in the if scope, commands under then runs if the conditions are true otherwise it will run to else conditions. Noticably, if statement ends after the else.
+
+we mainly dontuse the if/else statement for comparing numbers but for checking files/directory/other. 
+-f -> for file
+-d -> for directory
+
+
+
+
